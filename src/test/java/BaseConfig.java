@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BaseConfig {
+public abstract class BaseConfig {
 
     /**
      * Ссылка на драйвер Appium, через который мы будем взаимодействовать с ним.
@@ -37,7 +37,7 @@ public class BaseConfig {
         capabilities.setCapability(MobileCapabilityType.NO_RESET,false);
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
 
-        capabilities.setCapability(MobileCapabilityType.APP, "D:\\Temp\\Wildberries_6.4.5001_apkcombo.com.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Testing\\apk\\Wildberries_6.4.5001_apkcombo.com.apk");
 
         try {
             // перехватываем возможные ошибки во время подключения к Appium Server
